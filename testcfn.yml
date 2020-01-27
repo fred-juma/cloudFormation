@@ -1,0 +1,12 @@
+Description: >
+  Fred Juma / Udacity
+  This template deploys a VPC
+Resources:
+  UdacityVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsHostnames: true
+
+#How to run the script:
+#aws cloudformation create-stack --stack-name ourfirsttest --region us-west-2 --template-body file://testcfn.yml
